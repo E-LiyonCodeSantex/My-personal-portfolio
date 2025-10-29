@@ -1,17 +1,23 @@
 import { ServicesCardProps } from "@/interface/index";
+import Image from "next/image";
 
 const ServicesCard: React.FC<{ card: ServicesCardProps }> = ({ card }) => {
     return (
         <div className="w-full overflow-hidden p-4 border-1 border-white/40 shadow rounded-lg mb-6 shadow-white-40">
-            <img
+            <Image
                 src={card.image}
                 alt="Top left"
-                className="float-left w-[200px] h-[200px] mr-4 mb-2 object-cover border-1 shadow-sm rounded-lg shadow-white-40"
+                width={200}
+                height={200}
+                className="float-left mr-4 mb-2 object-cover border-1 shadow-sm rounded-lg shadow-white-40"
             />
             <div className="text-justify">
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mb-4">
-                    <img src={card.icon} alt=""
-                        className=" w-[50px] h-[50px] rounded object-cover" />
+                    <Image src={card.icon} alt=""
+                    width={50}
+                    height={50}
+                    object-cover
+                        className="rounded" />
                     <h1 className="font-bold text-xl">{card.title}</h1>
                 </div>
                 <p className="text-justify text-sm">

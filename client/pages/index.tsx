@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import landingImage from "@/public/assets/landing-image.jpg";
 import backgroundImage from "@/public/assets/ABout-background.png";
 import serviceBackground from "@/public/assets/service-bg.png";
 import profilePic from "@/public/assets/Chinedu.png";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import AboutUsCard from "@/component/AboutCard";
 import { ABOUT_US_CARDS } from "@/constant/index";
@@ -259,32 +258,32 @@ export default function Home() {
           <div className="flex gap-4">
             {/**Whatsapp */}
             <a href="https://wa.me/2347031246600" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/whatsapp.png" alt="WhatsApp" className="w-[30px] h-[30px]" />
+              <Image src="/assets/icons/whatsapp.png" alt="WhatsApp" width={30} height={30} />
             </a>
 
             {/**Youtube */}
             <a href="https://www.youtube.com/@SantexEzem" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/Vector.png" alt="Youtube" className="w-[30px] h-[30px]" />
+              <Image src="/assets/icons/Vector.png" alt="Youtube" width={30} height={30} />
             </a>
 
             {/* Twitter */}
             <a href="https://x.com/chineduezemwho" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/xmark-solid-full 1.png" alt="Twitter" className="w-[30px] h-[30px]" />
+              <Image src="/assets/icons/xmark-solid-full 1.png" alt="Twitter" width={30} height={30} />
             </a>
 
             {/* TikTok */}
             <a href="https://www.tiktok.com/chineduezemwho" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/tiktok-brands-solid-full 1.png" alt="TikTok" className="w-[30px] h-[30px]" />
+              <Image src="/assets/icons/tiktok-brands-solid-full 1.png" alt="TikTok" width={30} height={30} />
             </a>
 
             {/* Facebook */}
             <a href="https://www.facebook.com/share/1GVLZFq85e/" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/facebook-brands-solid-full 1.png" alt="Facebook" className="w-[30px] h-[30px]" />
+              <Image src="/assets/icons/facebook-brands-solid-full 1.png" alt="Facebook" width={30} height={30} />
             </a>
 
             {/* GitHub */}
             <a href="https://github.com/E-LiyonCodeSantex" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/github-brands-solid-full 1.png" alt="GitHub" className="w-[30px] h-[30px]" />
+              <Image src="/assets/icons/github-brands-solid-full 1.png" alt="GitHub" width={30} height={30} />
             </a>
           </div>
 
