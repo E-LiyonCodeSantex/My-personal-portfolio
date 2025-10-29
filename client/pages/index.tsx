@@ -162,7 +162,7 @@ export default function Home() {
 
         <p className="z-10 px-4 text-justify">
           I believe that great digital experiences begin with empathy and end with impact. As a UI/UX designer and full-stack developer, I stand for clarity, usability, and innovation—crafting interfaces that feel intuitive and building systems that scale with purpose.
-          I solve the disconnect between design and development by bridging creativity with code. Whether it's a sleek landing page or a dynamic web application, I ensure that every pixel and every function serves the user.
+          I solve the disconnect between design and development by bridging creativity with code. Whether it&apos;s a sleek landing page or a dynamic web application, I ensure that every pixel and every function serves the user.
           I do what I do because I love turning ideas into reality. I’m driven by the challenge of solving real problems with thoughtful design and clean architecture—and I’m passionate about creating tools and experiences that grow with people.
         </p>
         <div className="w-full">
