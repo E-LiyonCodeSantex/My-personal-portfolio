@@ -25,7 +25,7 @@ Icons & Assets: Custom SVGs and PNGs
 📱 Fully responsive design for mobile and desktop
 
 📸 Screenshots
-![Landing page](https://postimg.cc/rDKmrc6v)
+[![Landing page](https://i.postimg.cc/K85gCv0v/Screenshot-2025-10-29-172735.png)](https://postimg.cc/rDKmrc6v)
 
 📬 Contact
 Feel free to reach out via:
