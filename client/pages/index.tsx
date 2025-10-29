@@ -51,15 +51,10 @@ export default function Home() {
       className={`${geistSans.className} ${geistMono.className} text-white font-sans flex flex-col items-center justify-center`}
     >
       <div className="flex flex-col items-center justify-center w-full h-screen relative overflow-hidden">
-        {/* Image falling in */}
-        <Image
-          src={landingImage}
-          alt="Landing"
-          fill
-          className="cover w-full animate-drop-in"
-        />
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#34BD5D] via-[#97D7AA] to-[#34BD5D] animate-swirl"></div>
+        <div className="absolute inset-0 z-1 bg-gradient-to-bl from-[#24B3B3] via-[rgba(151,215,170,0.4)] to-[#24B3B3]"></div>
         {/* Header falling in after delay */}
-        <nav className="flex justify-around items-center p-4 mt-4  gap-10 w-full 
+        <nav className="flex justify-around items-center p-4 mt-4  gap-10 w-full z-10
         absolute top-0 left-1/2 -translate-x-1/2 animate-bounce-in delay-[500ms]">
           <ul className="flex gap-10 text-lg font-medium">
             <a href="#about"> <li className="hover:text-xl w-[60px]">About</li></a>
@@ -90,15 +85,15 @@ export default function Home() {
         </nav>
 
         {/* Top texts coming down */}
-        <div className="absolute top-45 w-full flex justify-around gap-10 animate-drop-down delay-[1000ms]">
-          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#EAB5FF] to-[#0ACAFF] text-transparent bg-clip-text">Design</h1>
-          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#EAB5FF] to-[#0ACAFF] text-transparent bg-clip-text">CODE</h1>
+        <div className="absolute top-45 w-full flex justify-around gap-10 animate-drop-down delay-[1000ms] z-10">
+          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364] text-transparent bg-clip-text">Design</h1>
+          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]  text-transparent bg-clip-text">CODE</h1>
         </div>
-
+        <h1 className="text-4xl font-extrabold w-full flex justify-center items-center z-10 text-white animate-bounce-in delay-[500ms]">Welcome to My Portfolio</h1>
         {/* Bottom texts rising up */}
-        <div className="absolute bottom-45 w-full flex justify-around gap-10 animate-rise-up delay-[1000ms]">
-          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#EAB5FF] to-[#0ACAFF] text-transparent bg-clip-text">CREATE</h1>
-          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#EAB5FF] to-[#0ACAFF] text-transparent bg-clip-text">Innovate</h1>
+        <div className="absolute bottom-45 w-full flex justify-around gap-10 animate-rise-up delay-[1000ms] z-10">
+          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]  text-transparent bg-clip-text">CREATE</h1>
+          <h1 className="text-3xl font-extrabold bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]  text-transparent bg-clip-text">Innovate</h1>
         </div>
       </div>
 
